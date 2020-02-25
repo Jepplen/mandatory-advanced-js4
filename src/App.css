@@ -1,0 +1,41 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.board {
+  width: 469px;
+  height: 402px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+
+}
+
+.cell {
+  width: 65px;
+  height: 65px;
+  box-sizing: border-box;
+  border: 1px solid dodgerblue;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  height: 100px;
+}
+
+button {
+  margin-top: 10px;
+}
