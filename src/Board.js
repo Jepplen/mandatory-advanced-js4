@@ -1,7 +1,7 @@
 import React from "react";
 
 function Board({cells, onClickCell}){
-
+  
   return (
     <>
       <div className="board">
@@ -10,7 +10,7 @@ function Board({cells, onClickCell}){
             className="cell"
             key={cell.id}
             onClick={() => onClickCell(cell.id)}
-            style={{backgroundColor: cell.backgroundColor}}>     
+            style={{backgroundColor: cell.backgroundColor}}>
           </div>
         ))}
       </div>

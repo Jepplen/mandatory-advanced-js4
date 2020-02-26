@@ -26,7 +26,7 @@ function reducer(state, action){
         return state;
       }
 
-      newBoard[bottomIndex] = {backgroundColor: state.currentPlayer}
+      newBoard[bottomIndex] = {...newBoard[bottomIndex], backgroundColor: state.currentPlayer}
       const winner = checkAll(newBoard);
 
       return { board: newBoard, currentPlayer: state.currentPlayer === "Blue" ? "Red" : "Blue", winner };
